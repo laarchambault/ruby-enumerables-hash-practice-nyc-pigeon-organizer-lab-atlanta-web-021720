@@ -3,7 +3,7 @@ require 'pry'
 def create_keys_for_pigeons(list)
   pigeon_names = {}
   list.each { |attribute_group_key, value_hash| 
-    value_hash.each { |pigeon_array|
+    value_hash.each { |attribute_type_key, pigeon_array|
     binding.pry
     if !pigeon_names.include? pigeon
       pigeon_names[pigeon] = {}
