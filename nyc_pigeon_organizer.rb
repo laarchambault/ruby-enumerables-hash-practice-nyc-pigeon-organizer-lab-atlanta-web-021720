@@ -24,9 +24,7 @@ def nyc_pigeon_organizer(data)
   attribute_type_key = attribute_type_key.to_s
   if !pigeon_names[x].include? attribute_group_key
     pigeon_names[x][attribute_group_key] = [attribute_type_key]
-binding.pry
   else
-    if !pigeon_names[x][attribute_group_key].include? attribute_type_key
       pigeon_names[x][attribute_group_key] << attribute_type_key
     end
   end
