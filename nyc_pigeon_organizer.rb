@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   attribute_array.each { |attribute_type_key, value_array|
   value_array.each { |x| 
       binding.pry
-  if !pigeon_names.include? x
+  if !pigeon_names.include? x[attribute_group_key]
     pigeon_names[x] = {}
     pigeon_names[x][attribute_group_key] = [attribute_type_key]
 
