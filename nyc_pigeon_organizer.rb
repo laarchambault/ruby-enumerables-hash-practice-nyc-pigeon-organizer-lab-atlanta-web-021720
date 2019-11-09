@@ -5,9 +5,11 @@ def create_keys_for_pigeons(list)
   list.each { |attribute_group_key, value_hash| 
     value_hash.each { |attribute_type_key, pigeon_array|
     binding.pry
+    pigeon_array.each { |pigeon|
     if !pigeon_names.include? pigeon
-      pigeon_names[pigeon] = {}
+       pigeon_names[pigeon] = {}
     end
+    }
     }
   }
   pigeon_names
