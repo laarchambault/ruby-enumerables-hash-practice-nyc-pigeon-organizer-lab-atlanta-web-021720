@@ -18,7 +18,7 @@ end
 def nyc_pigeon_organizer(data)
   pigeon_names = create_keys_for_pigeons(data)
 
-  data.each { |attribute_group_key|
+  data.each { |attribute_group_key, attribute_array|
   attribute_group_key.each { |attribute_type_key, value_array|
   binding.pry
   value_array.any? { |x| 
