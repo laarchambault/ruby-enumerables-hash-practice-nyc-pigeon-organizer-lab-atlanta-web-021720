@@ -20,6 +20,7 @@ def nyc_pigeon_organizer(data)
 
   data.each { |attribute_group_key|
   attribute_group_key.each { |attribute_type_key, value_array|
+  binding.pry
   value_array.any? { |x| 
   if !pigeon_names.include? x
     pigeon_names[x] = {}
@@ -29,7 +30,6 @@ def nyc_pigeon_organizer(data)
       pigeon_names[x][attribute_group_key] << attribute_type_key
     end
   end
-  binding.pry
   }
   }
   }
