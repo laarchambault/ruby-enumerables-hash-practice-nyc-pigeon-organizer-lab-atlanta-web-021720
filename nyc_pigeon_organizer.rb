@@ -17,7 +17,7 @@ end
 
 def nyc_pigeon_organizer(data)
   pigeon_names = create_keys_for_pigeons(data)
-binding.pry
+
   data.each { |attribute_group_key|
   attribute_group_key.each { |attribute_type_key, value_array|
   value_array.any? { |x| 
@@ -29,6 +29,7 @@ binding.pry
       pigeon_names[x][attribute_group_key] << attribute_type_key
     end
   end
+  
   }
   }
   }
