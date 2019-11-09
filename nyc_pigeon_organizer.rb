@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
       pigeon_names[x][attribute_group_key] << attribute_type_key
     end
   end
-  
+  binding.pry
   }
   }
   }
