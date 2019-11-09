@@ -2,8 +2,8 @@ require 'pry'
 
 def create_keys_for_pigeons(list)
   pigeon_names = {}
-  list.each { |attribute_type| 
-    attribute_type.each { |pigeon|
+  list.each { |attribute_group_key, value_hash| 
+    value_hash.each { |pigeon_array|
     binding.pry
     if !pigeon_names.include? pigeon
       pigeon_names[pigeon] = {}
